@@ -18,4 +18,11 @@ public class Vikingo extends Humano {
     public void setBebedorProfesional(Integer bebedorProfesional) {
         this.bebedorProfesional = bebedorProfesional;
     }
+
+    @Override
+    public String toString() {
+        return "\n-----------------\nVikingo:" +
+                "\nbebedorProfesional: " + bebedorProfesional +
+                super.toString();
+    }
 }

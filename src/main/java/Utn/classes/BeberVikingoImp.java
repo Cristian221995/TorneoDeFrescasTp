@@ -8,6 +8,6 @@ public class BeberVikingoImp implements Beber {
 
     @Override
     public void beber(){
-        System.out.println("Hola soy un vikingo bebiendo");
+        System.out.println("Vikingo Bebiendo");
     }
 }

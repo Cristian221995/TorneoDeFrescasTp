@@ -8,6 +8,6 @@ public class OrinarVikingoImp implements Orinar {
 
     @Override
     public void orinar() {
-
+        System.out.println("Soy un Vikingo orinando, perdi.");
     }
 }

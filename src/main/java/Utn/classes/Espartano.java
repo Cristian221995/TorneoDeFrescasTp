@@ -18,4 +18,11 @@ public class Espartano extends Humano{
     public void setToleranciaExtra(Integer toleranciaExtra) {
         this.toleranciaExtra = toleranciaExtra;
     }
+
+    @Override
+    public String toString() {
+        return "\n-----------------\nEspartano:" +
+                "\ntoleranciaExtra=" + toleranciaExtra +
+                super.toString();
+    }
 }

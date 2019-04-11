@@ -8,6 +8,7 @@ public class OrinarEspartanoImp implements Orinar {
 
     @Override
     public void orinar() {
-        System.out.println("Soy un espartano orinando");
+
+        System.out.println("Soy un espartano orinando, perdi.");
     }
 }

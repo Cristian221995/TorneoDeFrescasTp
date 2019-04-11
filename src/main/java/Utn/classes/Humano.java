@@ -57,4 +57,11 @@ public class Humano {
     public void setBeber(Beber beber) {
         this.beber = beber;
     }
+
+    @Override
+    public String toString() {
+        return  "\nnombre: '" + nombre + '\'' +
+                "\nedad: " + edad +
+                "\npeso: " + peso ;
+    }
 }
