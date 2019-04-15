@@ -21,7 +21,7 @@ public class Vikingo extends Humano {
 
     @Override
     public String toString() {
-        return "\n-----------------\nVikingo:" +
+        return "\n\nVikingo:" +
                 "\nbebedorProfesional: " + bebedorProfesional +
                 super.toString();
     }

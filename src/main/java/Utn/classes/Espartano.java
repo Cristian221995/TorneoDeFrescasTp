@@ -21,7 +21,7 @@ public class Espartano extends Humano{
 
     @Override
     public String toString() {
-        return "\n-----------------\nEspartano:" +
+        return "\n\nEspartano:" +
                 "\ntoleranciaExtra=" + toleranciaExtra +
                 super.toString();
     }

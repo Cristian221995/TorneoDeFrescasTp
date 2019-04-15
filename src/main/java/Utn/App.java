@@ -22,20 +22,20 @@ public class App
                 new Espartano("Gaston", 23, (int) (Math.random() * 100) + 1, new OrinarEspartanoImp(), new BeberEspartanoImp(),(int) (Math.random() * 20) + 1 ),
                 new Espartano("Santi", 23, (int) (Math.random() * 100) + 1, new OrinarEspartanoImp(), new BeberEspartanoImp(),(int) (Math.random() * 20) + 1 ));
 
-        System.out.println("------Vikingos:------\n" + vikingos);
-        System.out.println("------Espartanos:------\n" + espartanos);
-        System.out.println("------Ordenados Por Peso:------\n");
+        System.out.println("-----------Vikingos:-----------\n" + vikingos);
+        System.out.println("-----------Espartanos:-----------\n" + espartanos);
+        System.out.println("----------------Ordenados Por Peso:----------------\n");
         vikingos.sort(Comparator.comparing(Vikingo::getPeso));
         espartanos.sort(Comparator.comparing(Espartano::getPeso));
         Collections.reverse(vikingos);
         Collections.reverse(espartanos);
-        System.out.println("------Vikingos:------\n" + vikingos);
-        System.out.println("------Espartanos:------\n" + espartanos);
+        System.out.println("-----------Vikingos:-----------\n" + vikingos);
+        System.out.println("-----------Espartanos:-----------\n" + espartanos);
 
         Espartano e1= espartanos.get(0);
         Vikingo v1= vikingos.get(0);
 
-        System.out.println("Vikingo y Espartano a enfrentarse:\n" + v1.toString() + e1.toString());
+        System.out.println("----------Vikingo y Espartano a enfrentarse:----------\n" + v1.toString() + e1.toString());
 
         Batalla batalla = new Batalla();
         batalla.batalla(v1, e1);
