@@ -11,6 +11,8 @@ public class App
     {
         List<Vikingo> vikingos = new ArrayList<Vikingo>();
         List<Espartano> espartanos = new ArrayList<Espartano>();
+        Humano ganador = null;
+        Humano boss = new Humano("Dueño",30, 150, new OrinarEspartanoImp(), new BeberVikingoImp());
 
         vikingos = Arrays.asList(new Vikingo("Cristian", 23, (int) (Math.random() * 100) + 1, new OrinarVikingoImp(), new BeberVikingoImp(),(int) (Math.random() * 20) + 1 ),
                 new Vikingo("Maxi", 20, (int) (Math.random() * 100) + 1, new OrinarVikingoImp(), new BeberVikingoImp(),(int) (Math.random() * 20) + 1 ),
@@ -38,6 +40,12 @@ public class App
         System.out.println("----------Vikingo y Espartano a enfrentarse:----------\n" + v1.toString() + e1.toString());
 
         Batalla batalla = new Batalla();
-        batalla.batalla(v1, e1);
+        ganador = batalla.batalla(v1, e1);
+
+        System.out.println("\n----------Enfrentamiento del ganador contra el dueño de la taberna:----------");
+        batalla.peleaBoss(boss, ganador);
+
+        System.out.println("\n-----Historial de ganadores:-----");
+        batalla.historialDeGanadores();
     }
 }
